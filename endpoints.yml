@@ -1,4 +1,4 @@
 action_endpoint:
-  url: "http://www.mrhope.me/webhook"
+  url: "http://localhost:5005/webhook"
 core_endpoint:
-  url: "http://www.mrhope.me"
+  url: "http://localhost:5005"
