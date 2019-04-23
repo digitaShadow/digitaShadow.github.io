@@ -1,0 +1,52 @@
+{
+  "action_fingerprints": {
+    "action_diagnosis": {
+      "slots": []
+    },
+    "utter_choice": {
+      "slots": []
+    },
+    "utter_bye": {
+      "slots": []
+    },
+    "utter_greet": {
+      "slots": []
+    },
+    "action_listen": {
+      "slots": [
+        "name",
+        "diagnosis",
+        "symptom"
+      ]
+    },
+    "action_medicine": {
+      "slots": [
+        "symptom"
+      ]
+    },
+    "utter_default": {
+      "slots": []
+    },
+    "utter_medicine": {
+      "slots": []
+    },
+    "utter_thank": {
+      "slots": []
+    },
+    "action_restart": {
+      "slots": []
+    }
+  },
+  "trained_at": "20190422-080012",
+  "max_histories": [
+    5,
+    5
+  ],
+  "python": "3.5.5",
+  "policy_names": [
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.memoization.MemoizationPolicy"
+  ],
+  "rasa_core": "0.12.4",
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble"
+}
