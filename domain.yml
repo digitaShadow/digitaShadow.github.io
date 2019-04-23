@@ -1,0 +1,89 @@
+%YAML 1.1
+---
+actions:
+- utter_bye
+- utter_greet
+- action_diagnosis
+- utter_result_fainting
+- utter_diagnosis
+- utter_results
+- utter_get_happy_images
+- action_medicine
+- utter_default
+- utter_thank
+- utter_ask_name
+- utter_ask_symptoms
+- utter_medicine
+- utter_digchoice
+- utter_choice
+entities:
+- name
+- symptom
+- diagnosis
+intents:
+- get_happy_images
+- bye
+- diagnosis
+- greet
+- opt_in
+- thank
+- choice
+- ask_name
+- out_of_scope
+- medicine
+slots:
+  diagnosis:
+    type: text
+  name:
+    type: text
+  symptom:
+    type: text
+templates:
+  utter_ask_name:
+  - text: Nice name! I shall call you Qasim from now.
+  utter_ask_symptoms:
+  - text: Please tell the problems you are facing...
+  utter_bye:
+  - text: Have a nice day!
+  - text: Talk to you later {name}
+  - text: Goodbye
+  - text: Bye, it was nice talking to you!
+  utter_choice:
+  - buttons:
+    - payload: 'Yes'
+      title: 'Yes'
+    - payload: 'No'
+      title: 'No'
+    text: Choose any one
+  utter_default:
+  - text: Sorry, I did not understand you
+  utter_default-intent-0_Hi:
+  - text: "Hi, My name is Mr.HOPE, I am a conversational agent for medical diagnosis\
+      \ based on the symptoms provided by you.\nPlease tell me your problem which\
+      \ brings you here.."
+  utter_diagnosis:
+  - text: Let me check for the diagnosis based on your symptoms.
+  utter_digchoice:
+  - text: Here are some of the diagnosis based on your symptoms, It could be Migraine
+      Cold Common Flu. Please note that these are not a doctor's diagnosis, you may
+      need to visit your family doctor in case of emergency.
+  utter_get_happy_images:
+  - image: http://cutestcats.us/wp-content/uploads/2014/07/The-Happiest-Smiling-Cat-In-The-Universe.jpg
+    text: Here is something to cheer you up
+  utter_greet:
+  - text: Hello, How can I help you?
+  - text: Hello, tell me your problems! I will assist you!
+  - text: Hi, My name is Mr.HOPE, I am a conversational agent for the medical diagnosis
+      based on the symptoms provided by you. Please tell me your problems.
+  utter_medicine:
+  - text: Is there any other problem you are facing?
+  utter_result_fainting:
+  - text: "Prompt Medical Attention Needed!! \n It seems that you may suffer from\
+      \ \n Hypertension \n Anxiety Disorder"
+  utter_results:
+  - text: Here are some of the diagnosis based on your symptoms.... It could be Cold
+      or Common Flu. Please note that these are not a doctor's diagnosis, you may
+      need to visit your family doctor in case of emergency.
+  utter_thank:
+  - text: You are welcome.
+  - text: Glad you liked my service
